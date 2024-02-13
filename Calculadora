@@ -1,0 +1,85 @@
+void setup(){
+ size(350,400); 
+ background(#C4C2C2);
+}
+
+ int valorDisplay=0;
+void draw(){
+
+textSize(60);
+fill(255);
+rect(30, 35, 290, 50);
+fill(0);
+text(valorDisplay, 40, 80);
+
+textSize(60);
+fill(255);
+rect(30, 105, 50, 50);
+fill(0);
+text("1", 40, 150);
+
+textSize(60);
+fill(255);
+rect(100, 105, 50, 50);
+fill(0);
+text("2", 110, 150);
+
+textSize(60);
+fill(255);
+rect(170, 105, 50, 50);
+fill(0);
+text("3", 180, 150);
+
+textSize(60);
+fill(255);
+rect(30, 175, 50, 50);
+fill(0);
+text("4", 40, 220);
+
+textSize(60);
+fill(255);
+rect(100, 175, 50, 50);
+fill(0);
+text("5", 110, 220);
+
+textSize(60);
+fill(255);
+rect(170, 175, 50, 50);
+fill(0);
+text("6", 180, 220);
+
+textSize(60);
+fill(255);
+rect(30, 245, 50, 50);
+fill(0);
+text("7", 40, 290);
+
+textSize(60);
+fill(255);
+rect(100, 245, 50, 50);
+fill(0);
+text("8", 110, 290);
+
+textSize(60);
+fill(255);
+rect(170, 245, 50, 50);
+fill(0);
+text("9", 180, 290);
+
+textSize(60);
+fill(255);
+rect(100, 315, 50, 50);
+fill(0);
+text("0", 110, 360);
+
+if ((mouseX>30 & mouseX<80)&(mouseY>105 & mouseY<155)){
+  if (mousePressed == true) {
+    valorDisplay=1;
+  } else {
+    fill(255);
+  }
+  println(mouseX, mouseY);
+  
+}
+
+}
